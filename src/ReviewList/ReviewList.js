@@ -12,8 +12,16 @@ export default function ReviewList(props) {
         );
       })}
 
-      <Review review={props.reviews[0]} />
-      <Review review={props.reviews[1]} />
+      {[<Review review={props.reviews[0]} />,
+      <Review review={props.reviews[1]} />,
+      <Review review={props.reviews[0]} />,
+      <Review review={props.reviews[1]} />,
+      <Review review={props.reviews[0]} />,
+      <Review review={props.reviews[1]} />,
+      <Review review={props.reviews[0]} />,
+      <Review review={props.reviews[1]} />,
+      <Review review={props.reviews[0]} />,
+      <Review review={props.reviews[1]} />]}
     </div>
   );
 }

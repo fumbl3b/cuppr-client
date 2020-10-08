@@ -44,7 +44,7 @@ export default {
       roaster_name: 'La Colombe Coffee Roasters',
       coffee_origin: 'Kenya',
       process_method: 'Washed',
-      review_body: 'Scenester neutra truffaut, pug selfies cloud bread chambray DIY poke sed XOXO. Before they sold out fanny pack williamsburg, aute pariatur proident chicharrones retro helvetica bicycle rights ut exercitation hammock subway tile pug. Distillery tousled yuccie blue bottle aliquip. Kogi laboris man bun woke. Culpa quinoa raw denim palo santo bespoke iPhone authentic. Mustache mixtape keffiyeh pitchfork pug. Knausgaard id nulla, tumeric four loko adaptogen commodo bitters blue bottle ullamco.',
+      review_body: 'Pinterest williamsburg direct trade pariatur try-hard vegan drinking vinegar subway tile artisan farm-to-table synth. Kale chips forage aliquip in ut. Paleo DIY semiotics normcore palo santo chartreuse echo park aliquip polaroid portland glossier readymade enamel pin eu. Consequat in elit plaid photo booth succulents. Aute enamel pin voluptate occaecat sed duis.',
       active: true
     }
   ],
@@ -54,6 +54,7 @@ export default {
       name: 'La Colombe Coffee Roasters',
       location: 'Philadelphia',
       founded_year: '1994',
+      about: '',
       verified: false,
       active: true
 
