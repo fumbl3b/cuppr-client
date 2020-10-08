@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/cuppr-client/static/css/main.2385b4f9.chunk.css",
+    "main.js": "/cuppr-client/static/js/main.4985b4d8.chunk.js",
+    "main.js.map": "/cuppr-client/static/js/main.4985b4d8.chunk.js.map",
+    "runtime-main.js": "/cuppr-client/static/js/runtime-main.4eb51300.js",
+    "runtime-main.js.map": "/cuppr-client/static/js/runtime-main.4eb51300.js.map",
+    "static/js/2.464506b0.chunk.js": "/cuppr-client/static/js/2.464506b0.chunk.js",
+    "static/js/2.464506b0.chunk.js.map": "/cuppr-client/static/js/2.464506b0.chunk.js.map",
+    "index.html": "/cuppr-client/index.html",
+    "precache-manifest.d572254019885df0d9290e373a41ab23.js": "/cuppr-client/precache-manifest.d572254019885df0d9290e373a41ab23.js",
+    "service-worker.js": "/cuppr-client/service-worker.js",
+    "static/css/main.2385b4f9.chunk.css.map": "/cuppr-client/static/css/main.2385b4f9.chunk.css.map",
+    "static/js/2.464506b0.chunk.js.LICENSE.txt": "/cuppr-client/static/js/2.464506b0.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4eb51300.js",
+    "static/js/2.464506b0.chunk.js",
+    "static/css/main.2385b4f9.chunk.css",
+    "static/js/main.4985b4d8.chunk.js"
+  ]
+}
