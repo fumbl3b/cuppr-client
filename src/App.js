@@ -17,13 +17,19 @@ export default class App extends React.Component {
   }
   
   render(){
-    let { navOptions } = this.state.STORE;
+    let { navOptions, coffee_reviews } = this.state.STORE;
+    console.log(coffee_reviews);
     return (
       <div className='App'>
         <Header navOptions={navOptions} />
           <Switch>
             <Route exact path='/' component={Landing} />
-            <Route path='/Reviews' component={ReviewList} />
+            <Route 
+              path='/Reviews'
+              render={(props) => (
+                <ReviewList {...props} reviews={coffee_reviews} />
+              )}
+            />
             <Route component={NotFound} />
           </Switch>
         <Footer />

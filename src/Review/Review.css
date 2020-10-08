@@ -1,0 +1,12 @@
+.review {
+  background-color: mistyrose;
+  margin: 2em;
+  padding: 1em 0;
+  text-align: center;
+  max-width: 600px;
+}
+
+p {
+  margin: 2em;
+  text-align: left;
+}

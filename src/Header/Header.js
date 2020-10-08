@@ -11,7 +11,7 @@ export default function Header (props) {
       <LeftContainer>
       <Link to='/'>
         <h1>CuppR</h1>
-        <h4>"the world's okayest Coffee review site"</h4>
+        <h4>"the world's okayest coffee review site"</h4>
       </Link>
       </LeftContainer>      
       <RightContainer>
