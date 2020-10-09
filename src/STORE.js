@@ -68,6 +68,22 @@ export default {
       comment_body: 'I agree with your sentiment regarding the Ethiopian Coffee',
       timestamp: 'timestamp',
       active: true
+    },
+    {
+      id: 2,
+      review_id: 1,
+      user_id: 2,
+      comment_body: 'Thanks FumbleBee',
+      timestamp: 'timestamp',
+      active: true
+    },
+    {
+      id: 3,
+      review_id: 2,
+      user_id: 2,
+      comment_body: 'You\'re wrong',
+      timestamp: 'timestamp',
+      active: true
     }
   ],
   navOptions: [

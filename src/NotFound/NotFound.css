@@ -1,0 +1,9 @@
+.not-found {
+  background-color: peachpuff;
+  margin: 2em;
+  padding: 1em 0;
+  border-radius: 3px;
+  text-align: center;
+  min-width: 90%;
+  min-height: 80vh;
+}

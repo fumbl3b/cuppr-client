@@ -17,8 +17,7 @@ export default class App extends React.Component {
   }
   
   render(){
-    let { navOptions, coffee_reviews } = this.state.STORE;
-    console.log(coffee_reviews);
+    let { navOptions, coffee_reviews, comments } = this.state.STORE;
     return (
       <div className='App'>
         <Header navOptions={navOptions} />
@@ -27,7 +26,7 @@ export default class App extends React.Component {
             <Route 
               path='/Reviews'
               render={(props) => (
-                <ReviewList {...props} reviews={coffee_reviews} />
+                <ReviewList {...props} reviews={coffee_reviews} comments={comments}/>
               )}
             />
             <Route component={NotFound} />
