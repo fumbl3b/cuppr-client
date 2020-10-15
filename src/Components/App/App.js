@@ -20,7 +20,7 @@ export default class App extends React.Component {
   
   constructor(props) {
     super(props);
-    this.state = { STORE };
+    this.state = { hasError: false, STORE };
   }
 
   componentDidMount() {
@@ -40,6 +40,18 @@ export default class App extends React.Component {
         });
       })
   }
+
+  handleSubmitBasicAuth = e => {
+    e.PreventDefault();
+    const { username,password } = e.target;
+
+    console.log('login submitted');
+    console.log({ username, password });
+
+    username.value = '';
+    password.value = '';
+    
+  }
   
   render(){
     let { coffee_review, comment } = this.state;
@@ -56,7 +68,9 @@ export default class App extends React.Component {
             />
             <Route
               path={'/Signup'}
-              component={SignupPage}
+              render={(props) => (
+                <SignupPage {...props} handleSubmitBasicAuth={this.handleSubmitBasicAuth} />
+              )}
             />
             <Route 
               exact path={'/Reviews/:reviewId'}
