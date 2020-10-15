@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/cuppr-client/precache-manifest.7dd2c3f7a71802f1be5ea33bdc6b32ee.js"
+  "/cuppr-client/precache-manifest.1d6878ec180c780da7f171461d52ee34.js"
 );
 
 self.addEventListener('message', (event) => {
