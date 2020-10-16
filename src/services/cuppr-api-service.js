@@ -17,19 +17,18 @@ const cupprApiService = {
         : res.json()
       )
   },
-  postReview(coffee_name, coffee_origin, process_method, roaster_name, body) {
+  postReview(newReview) {
+    const { display_name, coffee_name, coffee_origin, process_method, roaster_name, body } = newReview;
+    const author_id = 1;
+    const roaster_id = 1;
+    const reviewToPost = { display_name, coffee_name, coffee_origin, process_method, roaster_name, body, author_id, roaster_id };
+    console.log(reviewToPost);
     return fetch(`${config.API_ENDPOINT}/reviews`, {
       method: 'POST',
       headers: {
         'content-type': 'application/json',
       },
-      body: JSON.stringify({
-        coffee_name,
-        coffee_origin,
-        process_method,
-        roaster_name,
-        body
-      })
+      body: JSON.stringify(reviewToPost)
     })
     .then(res => 
       (!res.ok)

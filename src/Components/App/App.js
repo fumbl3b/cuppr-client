@@ -20,10 +20,19 @@ export default class App extends React.Component {
   
   constructor(props) {
     super(props);
-    this.state = { hasError: false, STORE };
+    this.state = { 
+      hasError: false,
+      STORE,
+      values: {},
+      redirect: null,
+    };
   }
 
   componentDidMount() {
+   this.handleDataUpdate();
+  }
+
+  handleDataUpdate = () => {
     cupprApiService.getReviews()
       .then((resJson) => {
         console.log(resJson);
@@ -41,21 +50,43 @@ export default class App extends React.Component {
       })
   }
 
-  handleSubmitBasicAuth = e => {
-    e.PreventDefault();
-    const { username,password } = e.target;
+  handleInputChange = e => {
+    const target = e.target;
+    const value = target.type === 'checkbox' ? target.checked : target.value;
+    const name = target.name;
 
-    console.log('login submitted');
-    console.log({ username, password });
+    this.setState({
+      values:{ ...this.state.values, [name]: value }
+    });
+  }
 
-    username.value = '';
-    password.value = '';
-    
+  handleReviewSubmit = e => {
+    e.preventDefault();
+    const newReview = this.state.values;
+    cupprApiService.postReview({...newReview});
+    this.setState({ 
+      values: {
+        display_name: '',
+        coffee_name: '',
+        coffee_origin: '',
+        process_method: 'Washed/Wet',
+        roaster_name: '',
+        body: ''
+      } 
+    });
+    // this.setState({
+    //   redirect: '/Reviews'
+    // });
   }
   
   render(){
     let { coffee_review, comment } = this.state;
     let { navOptions } = this.state.STORE;
+    
+    // if (this.state.redirect) {
+    //   return <Redirect to={this.state.redirect} />
+    // }
+
     return (
       <div className='App'>
         <Header navOptions={navOptions} />
@@ -69,7 +100,7 @@ export default class App extends React.Component {
             <Route
               path={'/Signup'}
               render={(props) => (
-                <SignupPage {...props} handleSubmitBasicAuth={this.handleSubmitBasicAuth} />
+                <SignupPage {...props} />
               )}
             />
             <Route 
@@ -84,7 +115,12 @@ export default class App extends React.Component {
             />
             <Route
               path={'/Write'}
-              component={WritePage}
+              render={(props) => (
+                <WritePage {...props} values={this.state.values}
+                  handleInputChange={this.handleInputChange}
+                  handleReviewSubmit={this.handleReviewSubmit}
+                />
+              )}
             />
             <Route
               path={'/Account'}
