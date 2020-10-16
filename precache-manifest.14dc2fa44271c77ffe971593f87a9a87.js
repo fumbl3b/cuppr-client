@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "441ab5f0cb76311ca8bddd90e7f368b5",
+    "revision": "b9964f9a70dbb1eb477d2e147b05a901",
     "url": "/cuppr-client/index.html"
   },
   {
-    "revision": "72176755054899c306ee",
+    "revision": "12b9d3ef71e68d88b245",
     "url": "/cuppr-client/static/css/main.52522140.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cuppr-client/static/js/2.d04087da.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "72176755054899c306ee",
-    "url": "/cuppr-client/static/js/main.63fe0b9f.chunk.js"
+    "revision": "12b9d3ef71e68d88b245",
+    "url": "/cuppr-client/static/js/main.ec9cdb4f.chunk.js"
   },
   {
     "revision": "fa8506ddb47e6e160215",
