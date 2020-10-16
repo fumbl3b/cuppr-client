@@ -9,7 +9,7 @@ export default function Header (props) {
   return (
     <header>
       <LeftContainer>
-      <Link to='/'>
+      <Link to='/cuppr-client'>
         <h1>CuppR</h1>
         <h4>"the world's okayest coffee review site"</h4>
       </Link>

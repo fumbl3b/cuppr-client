@@ -94,27 +94,31 @@ export default class App extends React.Component {
           <Switch>
             
             <Route 
-              exact path={'/' || '/cuppr-client'} 
+              exact path={'/cuppr-client'} 
               component={LandingPage} 
             />
             <Route
-              path={'/Signup'}
+              exact path={'/'}
+              component={LandingPage}
+            />
+            <Route
+              path={'/cuppr-client/Signup'}
               render={(props) => (
                 <SignupPage {...props} />
               )}
             />
             <Route 
-              exact path={'/Reviews/:reviewId'}
+              exact path={'/cuppr-client/Reviews/:reviewId'}
               component={ReviewPage}
             />
             <Route 
-              path={'/Reviews'}
+              path={'/cuppr-client/Reviews'}
               render={(props) => (
                 <ReviewList {...props} reviews={coffee_review} comments={comment}/>
               )}
             />
             <Route
-              path={'/Write'}
+              path={'/cuppr-client/Write'}
               render={(props) => (
                 <WritePage {...props} values={this.state.values}
                   handleInputChange={this.handleInputChange}
@@ -123,7 +127,7 @@ export default class App extends React.Component {
               )}
             />
             <Route
-              path={'/Account'}
+              path={'/cuppr-client/Account'}
               component={AccountPage}
             />
             <Route 
