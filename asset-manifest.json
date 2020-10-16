@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/cuppr-client/static/css/main.52522140.chunk.css",
-    "main.js": "/cuppr-client/static/js/main.ea55d7b0.chunk.js",
-    "main.js.map": "/cuppr-client/static/js/main.ea55d7b0.chunk.js.map",
+    "main.js": "/cuppr-client/static/js/main.3a29db41.chunk.js",
+    "main.js.map": "/cuppr-client/static/js/main.3a29db41.chunk.js.map",
     "runtime-main.js": "/cuppr-client/static/js/runtime-main.4eb51300.js",
     "runtime-main.js.map": "/cuppr-client/static/js/runtime-main.4eb51300.js.map",
     "static/js/2.d04087da.chunk.js": "/cuppr-client/static/js/2.d04087da.chunk.js",
     "static/js/2.d04087da.chunk.js.map": "/cuppr-client/static/js/2.d04087da.chunk.js.map",
     "index.html": "/cuppr-client/index.html",
-    "precache-manifest.c7d205e49a17e28c3770671e8f9324a1.js": "/cuppr-client/precache-manifest.c7d205e49a17e28c3770671e8f9324a1.js",
+    "precache-manifest.0669312be3f7e35e0a75e12a1f307371.js": "/cuppr-client/precache-manifest.0669312be3f7e35e0a75e12a1f307371.js",
     "service-worker.js": "/cuppr-client/service-worker.js",
     "static/css/main.52522140.chunk.css.map": "/cuppr-client/static/css/main.52522140.chunk.css.map",
     "static/js/2.d04087da.chunk.js.LICENSE.txt": "/cuppr-client/static/js/2.d04087da.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.4eb51300.js",
     "static/js/2.d04087da.chunk.js",
     "static/css/main.52522140.chunk.css",
-    "static/js/main.ea55d7b0.chunk.js"
+    "static/js/main.3a29db41.chunk.js"
   ]
 }
