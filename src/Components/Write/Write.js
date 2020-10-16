@@ -9,6 +9,15 @@ export default function Write(props) {
   return(
     <>
     <LeftContainer>
+    <img src={write} alt="review image" style={{ width: '200px' }} />
+      <h3>Review guidelines</h3>
+      <ol>
+        <li>Please include all details you can about the coffee, including its name, origin, processing method, and roaster.</li>
+        <li>Avoid subjective judgement calls.  If you liked something, please connect it to the experience or flavor.</li>
+        <li>Above all, be yourself.  There's no right way to write a review.  Have fun sharing our coffee experiences with others.</li>
+      </ol>
+    </LeftContainer>
+    <RightContainer>
     <form className='write-form' onChange={props.handleInputChange} 
       onSubmit={props.handleReviewSubmit}
       value={props.values}>
@@ -43,10 +52,7 @@ export default function Write(props) {
         <button type='submit '>Submit</button>
       </div>
     </form>
-    </LeftContainer>
-    <RightContainer>
-      <img src={write} alt="review image" style={{ width: '200px' }} />
-      Review guidelines
+      
     </RightContainer>
     </>
   ) 
