@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/cuppr-client/static/css/main.5424182c.chunk.css",
-    "main.js": "/cuppr-client/static/js/main.c5bc3895.chunk.js",
-    "main.js.map": "/cuppr-client/static/js/main.c5bc3895.chunk.js.map",
+    "main.css": "/cuppr-client/static/css/main.465aae6a.chunk.css",
+    "main.js": "/cuppr-client/static/js/main.9e156208.chunk.js",
+    "main.js.map": "/cuppr-client/static/js/main.9e156208.chunk.js.map",
     "runtime-main.js": "/cuppr-client/static/js/runtime-main.4eb51300.js",
     "runtime-main.js.map": "/cuppr-client/static/js/runtime-main.4eb51300.js.map",
     "static/js/2.36d3cb25.chunk.js": "/cuppr-client/static/js/2.36d3cb25.chunk.js",
     "static/js/2.36d3cb25.chunk.js.map": "/cuppr-client/static/js/2.36d3cb25.chunk.js.map",
     "index.html": "/cuppr-client/index.html",
-    "precache-manifest.3ad9f0a8e41d5c131e6b03487a23c0f4.js": "/cuppr-client/precache-manifest.3ad9f0a8e41d5c131e6b03487a23c0f4.js",
+    "precache-manifest.b8f3d58d22958f99712f32ec46d39e72.js": "/cuppr-client/precache-manifest.b8f3d58d22958f99712f32ec46d39e72.js",
     "service-worker.js": "/cuppr-client/service-worker.js",
-    "static/css/main.5424182c.chunk.css.map": "/cuppr-client/static/css/main.5424182c.chunk.css.map",
+    "static/css/main.465aae6a.chunk.css.map": "/cuppr-client/static/css/main.465aae6a.chunk.css.map",
     "static/js/2.36d3cb25.chunk.js.LICENSE.txt": "/cuppr-client/static/js/2.36d3cb25.chunk.js.LICENSE.txt",
     "static/media/cup.png": "/cuppr-client/static/media/cup.2c5982a9.png",
     "static/media/write.png": "/cuppr-client/static/media/write.51083b75.png"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.4eb51300.js",
     "static/js/2.36d3cb25.chunk.js",
-    "static/css/main.5424182c.chunk.css",
-    "static/js/main.c5bc3895.chunk.js"
+    "static/css/main.465aae6a.chunk.css",
+    "static/js/main.9e156208.chunk.js"
   ]
 }
