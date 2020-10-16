@@ -23,7 +23,7 @@ export default class App extends React.Component {
     this.state = { 
       hasError: false,
       STORE,
-      values: {},
+      values: { process_method: 'Washed/Wet' },
       redirect: null,
     };
   }

@@ -9,7 +9,7 @@ export default function Write(props) {
   return(
     <>
     <LeftContainer>
-    <img src={write} alt="review image" style={{ width: '200px' }} />
+    <div className='img-container'><img src={write} alt="review" style={{ width: '200px' }} /></div>
       <h3>Review guidelines</h3>
       <ol>
         <li>Please include all details you can about the coffee, including its name, origin, processing method, and roaster.</li>

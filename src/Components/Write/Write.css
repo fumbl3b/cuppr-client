@@ -4,6 +4,11 @@
   flex-direction: row;
 } */
 
+.img-container {
+  display: flex;
+  justify-content: center;
+}
+
 .write-form {
   background-color: peachpuff;
   margin: 2em;

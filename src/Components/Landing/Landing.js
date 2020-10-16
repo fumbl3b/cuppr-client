@@ -14,7 +14,7 @@ export default function Landing () {
           <p>CuppR is not affiliated with any roasters or coffee retailers, and will always be 100% free.  Please navigate to 'Reviews' to read some, or 'Write' to submit an experience of your own.</p>
         </LeftContainer>
         <RightContainer>
-          <img src={cup} alt="coffee cup" style={{ width: '200px' }} />
+          <h2><img src={cup} alt="coffee cup" style={{ width: '200px' }} /></h2>
           <h2>Welcome to Cuppr</h2>
           <p>Read.  Write. Coffee!</p>
         </RightContainer>           
