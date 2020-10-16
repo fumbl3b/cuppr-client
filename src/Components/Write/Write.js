@@ -1,6 +1,7 @@
 import React from 'react';
 import LeftContainer from '../Container/LeftContainer';
 import RightContainer from '../Container/RightContainer';
+import write from '../../img/write.png';
 import './Write.css';
 
 export default function Write(props) {
@@ -18,6 +19,7 @@ export default function Write(props) {
           <input required name='coffee_name' id='write-form-coffee_name' value={props.values.coffee_name} />
           <label htmlFor='coffee_orign'>origin:  </label>
           <input required name='coffee_origin' id='write-form-coffee_origin' value={props.values.coffee_origin} />
+        <label htmlFor='process_method'>processing method:</label>
         <select required name='process_method' id='write-form-process_method' value={props.values.process_method}>
           <option value='Washed/Wet'>Washed/Wet</option>
           <option value='Honey'>Honey</option>
@@ -43,6 +45,7 @@ export default function Write(props) {
     </form>
     </LeftContainer>
     <RightContainer>
+      <img src={write} alt="review image" style={{ width: '200px' }} />
       Review guidelines
     </RightContainer>
     </>

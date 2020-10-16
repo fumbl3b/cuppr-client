@@ -8,4 +8,5 @@
 
 .content-container > section {
   display: flex;
+  margin-bottom: 20vh;
 }

@@ -94,7 +94,7 @@ export default class App extends React.Component {
           <Switch>
             
             <Route 
-              exact path={'/'} 
+              exact path={'/' || '/cuppr-client'} 
               component={LandingPage} 
             />
             <Route
