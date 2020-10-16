@@ -87,9 +87,9 @@ export default {
     }
   ],
   navOptions: [
-    'Signup',
+    // 'Signup',
     'Reviews',
     'Write',
-    'Account',
+    // 'Account',
   ]
 }
