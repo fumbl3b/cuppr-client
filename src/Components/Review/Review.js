@@ -3,10 +3,9 @@ import React from 'react';
 import './Review.css';
 
 export default function Review (props) {
-  let { review, comments } = props;
+  let { review } = props;
+  //let commentsArr = comments.filter(comment => comment.review_id === review.id);
 
-  let commentsArr = comments.filter(comment => comment.review_id === review.id);
-  console.log(commentsArr);
   return (
     <div className="review">
       <h2>{review.coffee_name}</h2>
