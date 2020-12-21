@@ -1,5 +1,5 @@
 {
-  "homepage": "http://fumbl3b.github.io/cuppr-client",
+  "homepage": "https://cuppr-client.vercel.app/",
   "name": "cuppr-client",
   "version": "0.1.0",
   "private": true,
@@ -19,7 +19,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "vercel --prod"
   },
   "eslintConfig": {
     "extends": "react-app"

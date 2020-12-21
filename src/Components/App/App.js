@@ -3,7 +3,6 @@ import { Route, Switch } from 'react-router-dom';
 import STORE from '../../STORE';
 import Header from '../Header/Header';
 import LandingPage from '../../Routes/LandingPage/LandingPage';
-import SignupPage from '../../Routes/SignupPage/SignupPage';
 import ReviewPage from '../../Routes/ReviewPage/ReviewPage';
 import ReviewList from '../ReviewList/ReviewList';
 import WritePage from '../../Routes/WritePage/WritePage'
@@ -12,7 +11,6 @@ import Footer from '../Footer/Footer';
 import cupprApiService from '../../services/cuppr-api-service';
 
 import './App.css';
-import AccountPage from '../../Routes/AccountPage/AccountPage';
 
 
 
