@@ -9,7 +9,7 @@ export default function Nav (props) {
       {props.navOptions.map((option, idx) => {
         return (
 //changed this here ->
-        <Link key={idx} to={`/cuppr-client/${option}`}>
+        <Link key={idx} to={`/${option}`}>
           <li key={idx}>{option}</li>
         </Link>
         );

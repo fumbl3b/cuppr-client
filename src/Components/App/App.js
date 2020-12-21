@@ -94,41 +94,33 @@ export default class App extends React.Component {
           <Switch>
             
             <Route 
-              exact path={'/cuppr-client'} 
+              exact path={'/'} 
               component={LandingPage} 
             />
-            <Route
-              exact path={'/'}
-              component={LandingPage}
-            />
-            <Route
+            {/* <Route
               path={'/cuppr-client/Signup'}
               render={(props) => (
                 <SignupPage {...props} />
               )}
-            />
+            /> */}
             <Route 
-              exact path={'/cuppr-client/Reviews/:reviewId'}
+              exact path={'/Reviews/:reviewId'}
               component={ReviewPage}
             />
             <Route 
-              path={'/cuppr-client/Reviews'}
+              path={'/Reviews'}
               render={(props) => (
                 <ReviewList {...props} reviews={coffee_review} comments={comment}/>
               )}
             />
             <Route
-              path={'/cuppr-client/Write'}
+              path={'/Write'}
               render={(props) => (
                 <WritePage {...props} values={this.state.values}
                   handleInputChange={this.handleInputChange}
                   handleReviewSubmit={this.handleReviewSubmit}
                 />
               )}
-            />
-            <Route
-              path={'/cuppr-client/Account'}
-              component={AccountPage}
             />
             <Route 
               component={NotFoundPage} 
