@@ -6,6 +6,14 @@ import './Write.css';
 
 export default function Write(props) {
   
+  const afterSubmit = () => {
+    console.log(`aftersubmit ran`);
+    console.log(props.history);
+    props.handleReviewSubmit().then(() => {
+      props.history.push(`/Reviews/${props.submitId}`)
+    })
+  }
+
   return(
     <>
     <LeftContainer>
@@ -19,7 +27,7 @@ export default function Write(props) {
     </LeftContainer>
     <RightContainer>
     <form className='write-form' onChange={props.handleInputChange} 
-      onSubmit={props.handleReviewSubmit}
+      onSubmit={afterSubmit}
       value={props.values}>
       <div className='review-body'>
         <label htmlFor='display_name'>your name:  </label>
@@ -49,7 +57,7 @@ export default function Write(props) {
           placeholder='Type your review...'
           value={props.values.body}
         />
-        <button type='submit '>Submit</button>
+        <button type='submit'>Submit</button>
       </div>
     </form>
       

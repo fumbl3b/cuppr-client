@@ -23,6 +23,7 @@ export default class App extends React.Component {
       STORE,
       values: { process_method: 'Washed/Wet' },
       redirect: null,
+      submitId: null
     };
   }
 
@@ -61,7 +62,12 @@ export default class App extends React.Component {
   handleReviewSubmit = e => {
     e.preventDefault();
     const newReview = this.state.values;
-    cupprApiService.postReview({...newReview});
+    cupprApiService.postReview({...newReview})
+      .then(res => {
+        this.setState({
+          submitId: res.id,
+        })
+      });
     this.setState({ 
       values: {
         display_name: '',
@@ -72,13 +78,14 @@ export default class App extends React.Component {
         body: ''
       } 
     });
+    //this.state.history.push(`/Reviews/${id}`)
     // this.setState({
     //   redirect: '/Reviews'
     // });
   }
   
   render(){
-    let { coffee_review, comment } = this.state;
+    let { coffee_review, comment, history } = this.state;
     let { navOptions } = this.state.STORE;
     
     // if (this.state.redirect) {
@@ -103,18 +110,20 @@ export default class App extends React.Component {
             /> */}
             <Route 
               exact path={'/Reviews/:reviewId'}
-              component={ReviewPage}
+              render={(props) => (
+                <ReviewPage {...props} reviews={coffee_review} comments={comment} />
+              )}
             />
             <Route 
               path={'/Reviews'}
               render={(props) => (
-                <ReviewList {...props} reviews={coffee_review} comments={comment}/>
+                <ReviewList {...props} reviews={coffee_review} comments={comment} />
               )}
             />
             <Route
               path={'/Write'}
               render={(props) => (
-                <WritePage {...props} values={this.state.values}
+                <WritePage {...props} submitId={this.state.submitId} values={this.state.values}
                   handleInputChange={this.handleInputChange}
                   handleReviewSubmit={this.handleReviewSubmit}
                 />
