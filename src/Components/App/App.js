@@ -34,7 +34,6 @@ export default class App extends React.Component {
   handleDataUpdate = () => {
     cupprApiService.getReviews()
       .then((resJson) => {
-        console.log(resJson);
         this.setState({
           coffee_review: resJson
         })
@@ -42,7 +41,6 @@ export default class App extends React.Component {
       .catch();
     cupprApiService.getComments()
       .then((resJson) => {
-        console.log(resJson);
         this.setState({
           comment: resJson
         });
@@ -66,26 +64,20 @@ export default class App extends React.Component {
       .then(res => {
         this.setState({
           submitId: res.id,
+          values: {
+            display_name: '',
+            coffee_name: '',
+            coffee_origin: '',
+            process_method: 'Washed/Wet',
+            roaster_name: '',
+            body: ''
+          } 
         })
       });
-    this.setState({ 
-      values: {
-        display_name: '',
-        coffee_name: '',
-        coffee_origin: '',
-        process_method: 'Washed/Wet',
-        roaster_name: '',
-        body: ''
-      } 
-    });
-    //this.state.history.push(`/Reviews/${id}`)
-    // this.setState({
-    //   redirect: '/Reviews'
-    // });
   }
   
   render(){
-    let { coffee_review, comment, history } = this.state;
+    let { coffee_review, comment } = this.state;
     let { navOptions } = this.state.STORE;
     
     // if (this.state.redirect) {
@@ -97,7 +89,6 @@ export default class App extends React.Component {
         <Header navOptions={navOptions} />
         <main className='app-main'>
           <Switch>
-            
             <Route 
               exact path={'/'} 
               component={LandingPage} 
@@ -109,7 +100,7 @@ export default class App extends React.Component {
               )}
             /> */}
             <Route 
-              exact path={'/Reviews/:reviewId'}
+              path={'/Reviews/:reviewId'}
               render={(props) => (
                 <ReviewPage {...props} reviews={coffee_review} comments={comment} />
               )}
