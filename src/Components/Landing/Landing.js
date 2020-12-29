@@ -9,9 +9,9 @@ export default function Landing() {
     <div>
       <LeftContainer>
         <div className='review-body'>
+          <h2><img src={cup} alt="coffee cup" style={{ width: '200px' }} /></h2>
           <h2>Welcome to Cuppr</h2>
           <p>Read.  Write. Coffee!</p>
-          <h2><img src={cup} alt="coffee cup" style={{ width: '200px' }} /></h2>
         </div>
       </LeftContainer>
       <RightContainer>
