@@ -1,7 +1,7 @@
 # CuppR
 ### a coffee review portal
 
-![cuppr in action](<blockquote class="imgur-embed-pub" lang="en" data-id="a/cAa0EeN" data-context="false" ><a href="//imgur.com/a/cAa0EeN"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>)
+![cuppr in action](https://imgur.com/a/cAa0EeN)
 
 CuppR is a fun little project built to demonstrate compentencies using react.js in concert with an API built using node.js and express to handle a PostgreSQL DB.  You may view the API source code [here](https://github.com/fumbl3b/cuppr-api).
 
