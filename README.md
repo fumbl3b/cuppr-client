@@ -1,5 +1,5 @@
-#CuppR
-###a coffee review portal
+# CuppR
+### a coffee review portal
 
 CuppR is a fun little project built to demonstrate compentencies using react.js in concert with an API built using node.js and express to handle a PostgreSQL DB.  You may view the API source code [here](https://github.com/fumbl3b/cuppr-api).
 
