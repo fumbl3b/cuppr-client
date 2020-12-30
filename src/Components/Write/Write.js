@@ -40,7 +40,14 @@ export default class Write extends React.Component {
     cupprApiService.postReview(newReview).then(res => {
       this.setState({
         reviewURL: `/Reviews/${res.id}`,
-        values: { process_method: 'Washed/Wet' },
+        values: { 
+          display_name: '',
+          coffee_name: '',
+          coffee_origin: '',
+          process_method: 'Washed/Wet',
+          roaster_name: '',
+          body: ''
+        },
         submitted: true,
       })
     })
