@@ -2,16 +2,17 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Nav.css';
 
-export default function Nav (props) {
+export default function Nav(props) {
 
   return (
     <ul>
       {props.navOptions.map((option, idx) => {
         return (
-//changed this here ->
-        <Link key={idx} to={`/${option}`}>
-          <li key={idx}>{option}</li>
-        </Link>
+          //changed this here ->
+          <li key={idx}>
+            <Link key={idx} to={`/${option}`}>
+              {option}
+            </Link></li>
         );
       })}
     </ul>
