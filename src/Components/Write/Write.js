@@ -86,13 +86,13 @@ export default class Write extends React.Component {
             >
 
               <div className='review-body'>
-                <label htmlFor='display_name'>your name:  </label>
+                <label htmlFor='write-form-display_name'>your name:  </label>
                 <input required name='display_name' id='write-form-display_name' value={this.state.display_name} />
-                <label htmlFor='coffee_name'>coffee name:  </label>
+                <label htmlFor='write-form-coffee_name'>coffee name:  </label>
                 <input required name='coffee_name' id='write-form-coffee_name' value={this.state.coffee_name} />
-                <label htmlFor='coffee_orign'>origin:  </label>
+                <label htmlFor='write-form-coffee_origin'>origin:  </label>
                 <input required name='coffee_origin' id='write-form-coffee_origin' value={this.state.coffee_origin} />
-                <label htmlFor='process_method'>processing method:</label>
+                <label htmlFor='write-form-process_method'>processing method:</label>
                 <select required name='process_method' id='write-form-process_method' value={this.state.process_method} defaultValue={'Washed/Wet'}>
                   <option value='Washed/Wet'>Washed/Wet</option>
                   <option value='Honey'>Honey</option>
@@ -101,7 +101,7 @@ export default class Write extends React.Component {
                   <option value='Lactic'>Lactic</option>
                   <option value='Other/Blend'>Other/Blend</option>
                 </select>
-                <label htmlFor='roaster_name'>roaster name:</label>
+                <label htmlFor='write-form-roaster_name'>roaster name:</label>
                 <input required name='roaster_name' id='write-form-roaster_name' value={this.state.roaster_name} />
                 <textarea
                   required
